@@ -43,3 +43,4 @@ Implements onboarding, daily goals (Move / Eat / Calm), progress tracking, a ris
 git clone <your-repo-url>
 cd fyxlife-tracker
 npm install
+npm start
