@@ -10,8 +10,8 @@ export default function Dashboard() {
     const logs = useStore(s => s.logs);
     const addProgress = useStore(s => s.addProgress);
     const swapGoal = useStore(s => s.swapGoal);
-    const todaySummary = useStore(s => s.todaySummary);   // ✅ subscribe to fn
-    const summary = todaySummary();                       // ✅ call manually
+    const todaySummary = useStore(s => s.todaySummary);
+    const summary = todaySummary();
     const [swapFor, setSwapFor] = useState<string | null>(null);
 
     const today = logs[todayKey()];

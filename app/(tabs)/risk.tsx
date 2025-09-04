@@ -4,7 +4,6 @@ import { useStore } from "../../lib/store";
 type Risk = { label: string; system: "Cardio" | "Metabolic" | "Musculoskeletal" | "Neuro"; score: number };
 
 const computeRisks = (): Risk[] => {
-    // simple static-ish baseline; you can tweak with profile/activity if desired
     return [
         { label: "Heart disease", system: "Cardio", score: 35 },
         { label: "Early-onset diabetes", system: "Metabolic", score: 40 },
